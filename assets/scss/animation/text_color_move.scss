@@ -1,0 +1,132 @@
+.text-color-move-animation {
+  &::v-deep {
+    span {
+      animation: color-text-flow-keys 50s forwards infinite alternate;
+      &:nth-child(1) {
+        animation-delay: -19.8s;
+      }
+      &:nth-child(2) {
+        animation-delay: -19.6s;
+      }
+      &:nth-child(3) {
+        animation-delay: -19.4s;
+      }
+      &:nth-child(4) {
+        animation-delay: -19.2s;
+      }
+      &:nth-child(5) {
+        animation-delay: -19s;
+      }
+      &:nth-child(6) {
+        animation-delay: -18.8s;
+      }
+      &:nth-child(7) {
+        animation-delay: -18.6s;
+      }
+      &:nth-child(8) {
+        animation-delay: -18.4s;
+      }
+      &:nth-child(9) {
+        animation-delay: -18.2s;
+      }
+      &:nth-child(10) {
+        animation-delay: -18s;
+      }
+      &:nth-child(11) {
+        animation-delay: -17.8s;
+      }
+      &:nth-child(12) {
+        animation-delay: -17.6s;
+      }
+      &:nth-child(13) {
+        animation-delay: -17.4s;
+      }
+      &:nth-child(14) {
+        animation-delay: -17.2s;
+      }
+      &:nth-child(15) {
+        animation-delay: -17s;
+      }
+      &:nth-child(16) {
+        animation-delay: -16.8s;
+      }
+      &:nth-child(17) {
+        animation-delay: -16.6s;
+      }
+      &:nth-child(18) {
+        animation-delay: -16.4s;
+      }
+      &:nth-child(19) {
+        animation-delay: -16.2s;
+      }
+      &:nth-child(20) {
+        animation-delay: -16s;
+      }
+    }
+  }
+}
+@keyframes color-text-flow-keys {
+  0% {
+    color: #d65c97;
+  }
+  5% {
+    color: #5cd666;
+  }
+  10% {
+    color: #a55cd6;
+  }
+  15.0% {
+    color: #5c7cd6;
+  }
+  20% {
+    color: #d65c7a;
+  }
+  25% {
+    color: #81d65c;
+  }
+  30.0% {
+    color: #835cd6;
+  }
+  35% {
+    color: #685cd6;
+  }
+  40% {
+    color: #5c9dd6;
+  }
+  45% {
+    color: #5cd670;
+  }
+  50% {
+    color: #d6625c;
+  }
+  55.0% {
+    color: #d6835c;
+  }
+  60.0% {
+    color: #d6605c;
+  }
+  65% {
+    color: #be5cd6;
+  }
+  70% {
+    color: #5c8dd6;
+  }
+  75% {
+    color: #95d65c;
+  }
+  80% {
+    color: #d69d5c;
+  }
+  85.0% {
+    color: #d65c81;
+  }
+  90% {
+    color: #5cd666;
+  }
+  95% {
+    color: #d67e5c;
+  }
+  100% {
+    color: #64d65c;
+  }
+}

@@ -1,0 +1,120 @@
+@import '~/assets/scss/_index.scss';
+.default-container {
+  min-height: calc(var(--vh, 1vh) * 100);
+  background-color: #ffffff;
+  position: relative;
+}
+.form-header {
+  width: 100%;
+  height: 48px;
+  padding: 0 16px;
+  @include flexBox(row, flex-start, center);
+  border-bottom: 1px solid $blk-225;
+  .form-back {
+    width: 24px;
+    height: 24px;
+    @include defaultIcon(
+      'https://dcse8twossp9.cloudfront.net/static/img/v2/icon/arrow-back-black.svg'
+    );
+    cursor: pointer;
+  }
+}
+.form-title {
+  padding: 24px 16px 12px;
+}
+.form-container {
+  @include flexBox(column);
+  padding: 0 16px 24px;
+  gap: 8px;
+  input {
+    width: 100%;
+    line-height: 52px;
+    border-radius: 8px;
+    background-color: $blk-245;
+    padding: 0 12px;
+    font-size: 14px;
+    cursor: auto;
+    border: 1px solid $blk-245;
+    &.error {
+      border-color: #ff0032;
+    }
+  }
+  .form-button {
+    width: 100%;
+    line-height: 52px;
+    border-radius: 8px;
+    background-color: $blk-225;
+    text-align: center;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: $medium;
+    transition: background-color 0.3s ease;
+    will-change: auto;
+    cursor: pointer;
+    &.on {
+      background-color: $office-violet;
+    }
+  }
+  .form--hidden {
+    display: none;
+  }
+}
+.agree-box {
+  width: 100%;
+  height: 52px;
+  @include flexBox(row, flex-start, center);
+  padding: 0 12px;
+  cursor: pointer;
+  &.box-container {
+    border: 1px solid $blk-225;
+    border-radius: 8px;
+    &.on {
+      border-color: $office-violet;
+    }
+    input[type='checkbox'] {
+      & + i {
+        @include defaultIcon(
+          'https://dcse8twossp9.cloudfront.net/static/img/v2/icon/check-circle-gray.svg'
+        );
+      }
+      &:checked {
+        & + i {
+          @include defaultIcon(
+            'https://dcse8twossp9.cloudfront.net/static/img/v2/icon/check-circle-violet.svg'
+          );
+        }
+      }
+    }
+  }
+  input[type='checkbox'] {
+    display: none;
+    & + i {
+      display: block;
+      width: 22px;
+      height: 22px;
+      @include defaultIcon(
+        'https://dcse8twossp9.cloudfront.net/static/img/v2/icon/check-gray.svg'
+      );
+    }
+    &:checked {
+      & + i {
+        @include defaultIcon(
+          'https://dcse8twossp9.cloudfront.net/static/img/v2/icon/check-violet.svg'
+        );
+      }
+    }
+  }
+  span {
+    font-size: 14px;
+    margin-left: 8px;
+  }
+}
+.form-column {
+  width: 100%;
+  @include flexBox(column);
+  gap: 4px;
+}
+.form-error {
+  font-size: 12px;
+  color: #ff0032;
+}
